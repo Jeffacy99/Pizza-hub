@@ -147,13 +147,14 @@ function Pizza(size, crust) {
       pizzaList.forEach(function(pizza) {
         total += pizza;
       });
+      alert( "We deliver at a cost of ksh 200 in 30 mins.")
       $("#money").text(total);
     });
   
     
     $("#myModel").click(function() {
       var deliver = confirm(
-        "We deliver at a cost of ksh 200 in 30 mins."
+       alert( "We deliver at a cost of ksh 200 in 30 mins.")
       );
       if (deliver) {
         var place = prompt("location");
