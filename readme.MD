@@ -27,7 +27,7 @@ I want to thank moringa school for the information on how to develop such a site
 ## TECHNOLOGIES USED
 >Html 5
 >CSS
->Bootstrap
+>Bootstrap(css & js)
 >JavaScript
 >jQuery
 
