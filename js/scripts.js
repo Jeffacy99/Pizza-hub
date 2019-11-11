@@ -21,7 +21,7 @@ function Pizza(size, crust) {
     };
   
   var crustPrice = {
-    Thick: 100,
+    thick: 100,
     thin: 70,
     custom:50,
   };
