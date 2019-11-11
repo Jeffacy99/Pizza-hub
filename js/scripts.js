@@ -1,4 +1,4 @@
-function Pizza(size, crust) {
+function Pizza(size,crust) {
   this.size = size;
   this.crust = crust;
   this.toppings = [];
@@ -105,7 +105,6 @@ $("document").ready(function () {
       crustCalcPrice(crust) +
       toppingsCalcPrice(toppingList);
 
-
     $("#items").append(
       "<tr>" +
       "<td>" +
@@ -152,7 +151,7 @@ $("document").ready(function () {
   });
 
 
-  $("#myModel").click(function () {
+  $("#myModal").click(function () {
     var deliver = confirm(
       alert("We deliver at a cost of ksh 200 in 30 mins.")
     );

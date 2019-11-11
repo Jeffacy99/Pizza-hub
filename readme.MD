@@ -31,6 +31,10 @@ I want to thank moringa school for the information on how to develop such a site
 >JavaScript
 >jQuery
 
+## Sneak view
+<img src="images/hub1.png">
+<img src="images/hub2.png">
+<img src="images/hub3.png">
 
 ## CONTACT INFORMATION
 For comments,correction,modification or addition of information email at japhethmwania99@gmail.com

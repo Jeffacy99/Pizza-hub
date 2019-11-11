@@ -43,7 +43,11 @@
     font-size: 50px;
   }
   #works h1 {
-    color: #247a00;
+    color: green;
+  }
+  .modal-title {
+    line-height: 0.5;
+
   }
   #fluid-border {
     border: none;
@@ -60,8 +64,8 @@
     color: red;
   }
   footer {
-    height: 70vh;
-    background-color:greenyellow;
+    height: 15vh;
+    background-color:white;
     margin-top: 50px;
   }
   #brand {
