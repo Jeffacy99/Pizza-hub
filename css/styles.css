@@ -52,8 +52,7 @@
     padding-top: 50px;
   }
   #cart {
-    text-align: center;
-    height:10;
+    text-align: top-left;
   }
   .form-control{
     display: block;
