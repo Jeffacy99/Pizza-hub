@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>PIZZA HUB</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <h1>Pizza Hub</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="resize" src="images/small.jpeg" alt="small-pizza" class="wiggle">
+          <br>
+          <caption class="text-white">Small Pizza<br>(Ksh.550)</caption>
+        </div>
+        <div class="col-md-4">
+          <img class="resize" src="images/pizza4.jpeg" alt="medium-pizza" class="wiggle">
+          <br>
+          <caption class="text-white">Medium Pizza<br>(Ksh.800)</caption>
+        </div>
+        <div class="col-md-4">
+          <img class="resize" src="images/pizza3.jpeg" alt="large-pizza" class="wiggle">
+          <br>
+          <caption class="text-white">Large Pizza<br>Ksh. 1000</caption>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form id="myform">
+    <div class="form-group">
+      <label for="pizza-size"><b>Pizza Size</b></label>
+      <select class="form-control" id="pizza-size">
+        <option value="small">Small(Ksh.550)</option>
+        <option value="medium">Medium(Ksh.800)</option>
+        <option value="large"> Large(Ksh.1000)</option>
+        <option value="large"> Extra Large(Ksh.1250)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pizza-flavours"><b>Flavour</b></label>
+      <select class="form-control" id="Flavour">
+        <option value="Flavour">BBQ Chicken </option>
+        <option value="Flavour">Chicken Periperi</option>
+        <option value="Flavour">Chicken Hawaiian</option>
+        <option value="Flavour">Meat Deluxe</option>
+        <option value="Flavour">Boerewors</option>
+        <option value="Flavour">Veg Tikka</option>
+      </select>
+    </div>
+    <div class="form-group">
+    <label for="crust"><b>Try Your Crust:</b></label>
+    <select class="form-control" id="crust" required>
+      <option value="thin">Thin Crust (Ksh.70) </option>
+      <option value="thick">Thick Crust (Ksh.100)</option>
+      <option value="custom">Custom Crust(Ksh.50) </option>
+    </select>
+    </div>
+    <p> <b>Toppings</b></p>
+    <div class="toppings">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="pepperoni" />
+        <label class="form-check-label" for="inlineCheckbox1">Meat toppings (ksh.100)</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="veges" />
+        <label class="form-check-label" for="inlineCheckbox2">Vegetable toppings(ksh.50)</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="bacon" />
+        <label class="form-check-label" for="inlineCheckbox2">Double stack (ksh.150)</label>
+      </div>
+    </div>
+    <label for="number"><b>How many pieces!!</b></label>
+    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+  </form>
+  <button type="submit" class="btn-success btn mt-3" id="orderbtn">
+    Order now
+  </button>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card mt-1">
+      <div class="card-title d-inline-flex">
+        <h3 class="p-4">View items in cart</h3>
+        <i class="p-4 fa fa-shopping-cart total"><button class="btn-success btn ml-2" value="0" id="quantity">
+            0
+          </button></i>
+      </div>
+      <div class="card-body">
+        <table id="table">
+          <tr>
+            <td>Pizza size</td></br>
+            <td>Flavour</td></br>
+            <td>Crust</td></br>
+            <td>Toppings</td></br>
+            <td>Pieces</td></br>
+
+          </tr>
+        </table>
+
+        <div id="cart">
+          <img id="cart" src="images/small.jpeg" alt="" />
+        </div>
+        <div id="items">
+          <a href="#order-section">
+            <div class="checkout">
+              <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
+                Checkout hub
+              </button>
+            </div>
+        </div>
+        <!-- </a> -->
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLongTitle">
+            Confirm the price
+          </h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Amount to pay is ksh
+            <span id="money" style="color: red"></span>
+          </p>
+        </div>
+      </div>
+      <div id="items"></div>
+      <a href="#order-section">
+        <div class="checkout">
+          <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
+            Checkout
+          </button>
+        </div>
+        <div id="contact-section"></div>
+        <footer>
+          <div id="footer-text">
+            <h2 id="brand">Pizza<span>Hub</span></h2>
+            <p>
+            </p>
+          </div>
+    </div>
+
+</body>
+
+</html>

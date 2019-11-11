@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    float: center;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+  .tm-container {
+    max-width: 70vw;
+    margin: 0 auto;
+  }
+  .navbar-nav {
+    text-transform: uppercase;
+  }
+  .nav-item {
+    padding: 0 20px;
+  }
+  .navbar span {
+    color: #ea5b31;
+  }
+  .navbar h2 {
+    color: red;
+  }
+  .main {
+    background-color: orangered;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .nav-item:hover {
+    border-bottom: 2px solid #ea5b31;
+  }
+  .welcome {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 165px;
+    padding-bottom: 105px;
+    font-size: 50px;
+  }
+  #works h1 {
+    color: #247a00;
+  }
+  #fluid-border {
+    border: none;
+  }
+  #order {
+    padding-top: 50px;
+  }
+  #cart {
+    text-align: center;
+    height:10;
+  }
+  .form-control{
+    display: block;
+    width: 50%;
+    color: red;
+  }
+  footer {
+    height: 20vh;
+    background-color:greenyellow;
+    margin-top: 30px;
+  }
+  #brand {
+    color: #247a00;
+    padding: 50px 0 0 50px;
+    /* float: left; */
+  }
+  #brand span {
+    color: #ea5b31;
+  }
+  .vertical {
+    border-left: 2px solid #ffffff;
+    position: absolute;
+    height: 45vh;
+    left: 50%;
+    margin-top: 20px;
+  }
+  #footer-text {
+    float: left;
+  }
+  /* .items {
+    display: inline;
+  } */
+  
+  td {
+    padding: 8px 0 0 12px;
+  }
+  #table {
+    display: none;
+  }
+  td img {
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-left: 5px;
+  }
+  .total {
+    font-size: 34px;
+    color: #ea5b31;
+  }
+  .checkout {
+    text-align: center;
+    display: inline-block;
+
+  }
+  #success {
+    display: none;
+  }
+  #no-delivery {
+    display: inline-block;
+  }
+  @media only screen and (max-width: 500px) {
+    .vertical {
+      display: none;
+    }
+  }
