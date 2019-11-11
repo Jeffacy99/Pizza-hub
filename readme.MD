@@ -36,6 +36,6 @@ I want to thank moringa school for the information on how to develop such a site
 For comments,correction,modification or addition of information email at japhethmwania99@gmail.com
 
 ## LICENSE AND COPYRIGHT
-License used is <a href="https://choosealicense.com/licenses/mit/">MIT License</a> <br>
+License used is <a href="https://choosealicense.com/licenses/mit/">MIT License</a></br>
 
 Copyright (c) **Japheth Mwania (JK Mwania) November 2019**
